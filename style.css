@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{text-decoration: none;}
+h2{cursor: pointer;}
+
+nav{
+    background-color: black;
+    width: 100%;
+}
+
+ul{display: flex;
+    align-items: center;   
+    list-style: none; 
+    justify-content: right;
+    margin-right: 50px;
+}
+
+li{
+    font-size: 20px;
+    margin: 10px 30px;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+/*fine sezione del menù*/
+
+/*INIZIO SEZIONE BOXLOGO*/
+
+.boxlogo{
+    width: 100%;
+}
+
+.logo{width: 100%;
+height: 500px;}
+
+/*fine sezione logo*/
+
+/*inizio sezione banner scritta*/
+.boxbanner1{
+    text-align: center;
+}
+
+/*fine banner*/
+
+/*INIZIO CONTAINER*/
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px;
+}
+
+.boxnetflix{
+    display: flex;
+    flex-direction: row;
+}
+
+.boxplay{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.scritta{
+    background-color: red;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrittaplay{
+    background-color: blue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.netlogo{
+    width: 100px;
+    height: 100%;
+}
+
+.arcaderoom{
+    display: flex;
+    background-color: fuchsia;
+    color: black;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/*INIZIO HIDDEN BOX*/
+
+.hiddenbox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(34, 34, 34);
+    display: none;
+}
+
+.scrittehidden{
+    margin: 10px 10px;
+    color: white;
+}
+
+.dispo{
+    width: 100%;
+    color: rgb(219, 8, 8);
+    margin: 10px 0px;
+}
+
+
+
+/*FINE HIDDEN BOX*/
+
+
+
+/*sezione media query*/ 
+@media screen and (max-width: 420px){
+
+    /*sezione del menù*/
+    ul{display: flex;
+        align-items: center;  
+        justify-content: space-around; 
+        list-style: none; 
+        margin: 0;
+    }
+
+    li{
+        margin: 10px 0px;
+    }
+
+
+
+
+    /*sezione del logo*/
+    .logo{
+        width: 100%;
+        height: 350px;
+    }
+}
