@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>Sales Plays</title>
 </head>
 <body>
@@ -38,15 +40,15 @@
 <div class="container">
 
 <!--inizio container netflix-->
-    <div class="boxnetflix">
+    <div class="boxnetflix" id="netflix">
         <img src="./img/netlogo.jpg" alt="" class="netlogo">
         <div class="scritta">
-            <h2 onclick="mostra()">NETFLIX ROOMS</h2>
+            <h2>NETFLIX ROOMS</h2>
         </div>
     </div>
 
     <!--inizio box netflix nascosto-->
-    <div class="hiddenbox" id="link">
+    <div class="hiddenbox" id="boxnet">
         <img src="./img/netflix.jpg" alt="" class="logo">
 
         <div class="scrittehidden">
@@ -69,15 +71,15 @@
 <!--fine container netflix-->
 
 <!--inizio container playstation-->
-<div class="boxplay">
+<div class="boxplay" id="flip">
     <img src="./img/playlogo.jpg" alt="" class="netlogo">
     <div class="scrittaplay">
-        <h2 onclick="mostraplay()">PS5 ROOMS</h2>
+        <h2>PS5 ROOMS</h2>
     </div>
 </div>
 
    <!--inizio box playstation nascosto-->
-   <div class="hiddenbox" id="linkplay">
+   <div class="hiddenbox" id="panel">
     <img src="./img/play.jpg" alt="" class="logo">
 
     <div class="scrittehidden">

@@ -1,12 +1,15 @@
-// mostriamo le pagine nascoste
 
+ 
+// utilizzo slidetoggle di jquery
 
-function mostra(){
-    let boxhidden= document.getElementById('link');
-    boxhidden.style.display = "Flex";
-};
+$(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideToggle("slow"); //utilizza la funzione slidetoggle
+    });
+  });
 
-function mostraplay(){
-    let boxhidden= document.getElementById('linkplay');
-    boxhidden.style.display = "Flex";
-};
+  $(document).ready(function(){
+    $("#netflix").click(function(){
+      $("#boxnet").slideToggle("slow"); //utilizza la funzione slidetoggle
+    });
+  });
